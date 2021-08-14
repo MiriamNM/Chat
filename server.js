@@ -3,8 +3,8 @@ const app = express();
 const server = require('http').Server(app);
 
 const cors = require('cors');
-const router = require('./network/routes');
 const socket = require('./socket');
+const router = require('./network/routes');
 const { config } = require('./config');
 
 const db = require('./db');
@@ -25,4 +25,3 @@ app.use('/app', express.static('public'))
 server.listen(3000, function () {
     console.log('La aplicación escucha en http://localhost:3000');
 });
-

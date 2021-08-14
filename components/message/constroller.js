@@ -1,5 +1,5 @@
-const socket = require('../../socket').socket;
 const store = require('./store');
+const { socket } = require('../../socket');
 
 function addMessage(user, message, file) {
     return new Promise((resolve, reject) => {
